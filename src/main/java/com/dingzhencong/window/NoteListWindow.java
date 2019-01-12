@@ -1,6 +1,10 @@
 package com.dingzhencong.window;
 
 import com.dingzhencong.data.DataCenter;
+import com.dingzhencong.processor.DefaultSourceNoteData;
+import com.dingzhencong.processor.MDFreeMarkProcessor;
+import com.dingzhencong.processor.Processor;
+import com.dingzhencong.util.NotifyUtil;
 import com.intellij.openapi.fileChooser.FileChooser;
 import com.intellij.openapi.fileChooser.FileChooserDescriptorFactory;
 import com.intellij.openapi.project.Project;
@@ -27,7 +31,7 @@ public class NoteListWindow {
 
     public NoteListWindow(Project project, ToolWindow toolWindow) {
         init();
-        /*createBtn.addActionListener(new ActionListener() {
+        createBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String topic = topicEtf.getText();
@@ -50,7 +54,7 @@ public class NoteListWindow {
                     MessageDialogBuilder.yesNo("操作结果",String.format("生成文档成功 %s",filePath)).show();
                 }
             }
-        });*/
+        });
         clearBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

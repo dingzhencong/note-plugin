@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.freemarker', name: 'freemarker', version: '2.3.28'
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/

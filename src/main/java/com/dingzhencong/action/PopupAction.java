@@ -2,6 +2,7 @@ package com.dingzhencong.action;
 
 import com.dingzhencong.data.DataCenter;
 import com.dingzhencong.dialog.AddNoteDialog;
+import com.dingzhencong.util.NotifyUtil;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -23,7 +24,7 @@ public class PopupAction extends AnAction {
         //选择的内容
         DataCenter.SELECTED_TEXT = selectedText;
         if(selectedText==null||"".equals(selectedText)){
-//            NotifyUtil.notifyWarning("没有选中需要记录的内容");
+            NotifyUtil.notifyWarning("没有选中需要记录的内容");
             return;
         }
         //获取文件名称和类型，存储在全局变量
