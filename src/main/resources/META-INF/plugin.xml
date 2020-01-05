@@ -19,10 +19,13 @@
          on how to target different products -->
     <depends>com.intellij.modules.platform</depends>
 
+
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-    </extensions>
+        <toolWindow id="MarkBookWindow" secondary="true" anchor="right" factoryClass="com.dingzhencong.window.NoteListWindowFactory" icon="/markbook/pluginIcon.svg">
 
+        </toolWindow>
+    </extensions>
     <actions>
         <!-- Add your actions here -->
 
