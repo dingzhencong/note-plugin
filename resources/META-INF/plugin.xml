@@ -1,30 +1,20 @@
 <idea-plugin>
-    <id>icu.jogeen.markbook.id</id>
-    <name>MarkBook</name>
-    <version>1.2</version>
-    <vendor email="jogeen@qq.com" url="https://github.com/jogeen/MarkBook">jogeen</vendor>
+    <id>com.dzc.note</id>
+    <name>note</name>
+    <version>1.0</version>
+    <vendor email="dingzhencong@gmail.com" url="https://github.com/dingzhencong/note-plugin">dingzhencong</vendor>
 
     <description><![CDATA[
-      <p>An idea plug-in that helps us take notes when reading the source code</p>
-         <ol>
-           <li>1. Read the source code and take notes</li>
-           <li>2. Make a simple code tutorial</li/>
-           <li>3. Generate markdown notes with one click</li>
-         </ol>
-       <p>这是一款可以帮助程序员在阅读代码是添加笔记,并将笔记生成文档的插件。</p>
-         <ol>
-           <li> 1. 阅读源码做笔记</li>
-           <li> 2. 制作简单的代码教程</li/>
-           <li> 3. 一键生成Markdown笔记文章</li>
-         </ol>
+       代码阅读笔记插件,快速生成相应的MD文档,目前功能较简单，没有标题等级选择，和图片插入功能。
     ]]></description>
 
     <change-notes>
         <![CDATA[
       <ol>
-       <li> V1.2 edit notes</li/>
-       <li> V1.1 update Guide to user</li/>
-       <li> V1.0 release.</li>
+       <p>后期将加上的功能：</p>
+       <li>1.插入图片，方便阅读。</li/>
+       <li>2.标题等级选择。</li/>
+       <li>3.快速插入表格。</li>
      </ol>
     ]]>
     </change-notes>
@@ -33,13 +23,12 @@
 
     <depends>com.intellij.modules.lang</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="MarkBook" factoryClass="icu.jogeen.markbook.window.NoteListWindowFactory" anchor="right"
-                    icon="/img/mark.png"></toolWindow>
+        <toolWindow id="MarkBook" factoryClass="com.dzc.note.window.NoteListWindowFactory" anchor="right"
+                   ></toolWindow>
     </extensions>
 
     <actions>
-        <action id="PopupAction_ID" class="icu.jogeen.markbook.action.PopupAction" text="Mark" description="Add a note"
-                icon="/img/mark.png">
+        <action id="PopupAction_ID" class="com.dzc.note.action.PopupAction" text="Mark" description="Add a note" >
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>
