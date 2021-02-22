@@ -1,4 +1,4 @@
-package icu.jogeen.markbook.window;
+package com.dzc.note.window;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.wm.ToolWindow;

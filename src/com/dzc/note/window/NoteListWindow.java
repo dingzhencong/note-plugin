@@ -1,5 +1,11 @@
-package icu.jogeen.markbook.window;
+package com.dzc.note.window;
 
+import com.dzc.note.data.DataCenter;
+import com.dzc.note.data.NoteData;
+import com.dzc.note.dialog.NoteDialog;
+import com.dzc.note.processor.DefaultSourceNoteData;
+import com.dzc.note.processor.MDFreeMarkProcessor;
+import com.dzc.note.processor.Processor;
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationDisplayType;
 import com.intellij.notification.NotificationGroup;
@@ -10,12 +16,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.MessageType;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.wm.ToolWindow;
-import icu.jogeen.markbook.data.DataCenter;
-import icu.jogeen.markbook.data.NoteData;
-import icu.jogeen.markbook.dialog.NoteDialog;
-import icu.jogeen.markbook.processor.DefaultSourceNoteData;
-import icu.jogeen.markbook.processor.MDFreeMarkProcessor;
-import icu.jogeen.markbook.processor.Processor;
+
 
 import javax.swing.*;
 import java.awt.*;

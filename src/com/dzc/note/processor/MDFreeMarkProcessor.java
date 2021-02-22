@@ -1,4 +1,4 @@
-package icu.jogeen.markbook.processor;
+package com.dzc.note.processor;
 
 import com.intellij.ide.fileTemplates.impl.UrlUtil;
 import freemarker.cache.StringTemplateLoader;

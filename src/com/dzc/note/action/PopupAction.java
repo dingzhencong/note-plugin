@@ -1,12 +1,13 @@
-package icu.jogeen.markbook.action;
+package com.dzc.note.action;
 
+import com.dzc.note.data.DataCenter;
+import com.dzc.note.dialog.NoteDialog;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
-import icu.jogeen.markbook.data.DataCenter;
-import icu.jogeen.markbook.dialog.NoteDialog;
+
 
 public class PopupAction extends AnAction {
 

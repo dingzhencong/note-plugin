@@ -1,4 +1,4 @@
-package icu.jogeen.markbook.data;
+package com.dzc.note.data;
 
 public class NoteData {
     private String title;

@@ -1,7 +1,8 @@
-package icu.jogeen.markbook.dialog;
+package com.dzc.note.dialog;
 
-import icu.jogeen.markbook.data.DataCenter;
-import icu.jogeen.markbook.data.NoteData;
+
+import com.dzc.note.data.DataCenter;
+import com.dzc.note.data.NoteData;
 
 import javax.swing.*;
 import java.awt.event.*;

@@ -1,4 +1,4 @@
-package icu.jogeen.markbook.data;
+package com.dzc.note.data;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.LinkedList;
