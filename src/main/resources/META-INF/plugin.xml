@@ -23,12 +23,14 @@
 
     <depends>com.intellij.modules.lang</depends>
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="MarkBook" factoryClass="com.dzc.note.window.NoteListWindowFactory" anchor="right"
-                   ></toolWindow>
+        <toolWindow id="MarkBook" factoryClass="com.dzc.note.window.NoteListWindowFactory" anchor="right"/>
     </extensions>
 
     <actions>
-        <action id="PopupAction_ID" class="com.dzc.note.action.PopupAction" text="Mark" description="Add a note" >
+        <action id="test_id" class="com.dzc.note.action.TestAction" text="通知" description="测试通知功能">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+        </action>
+        <action id="PopupAction_id" class="com.dzc.note.action.PopupAction" text="note" description="Add a note" >
             <add-to-group group-id="EditorPopupMenu" anchor="first"/>
         </action>
     </actions>

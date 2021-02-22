@@ -12,7 +12,7 @@ import java.util.Map;
 public class MDFreeMarkProcessor extends AbstractFreeMarkProcessor {
     @Override
     protected Template getTemplate() throws IOException {
-        Configuration configuration = new Configuration(Configuration.VERSION_2_3_30);
+        Configuration configuration = new Configuration(Configuration.VERSION_2_3_0);
 
         String templateContent = UrlUtil.loadText(MDFreeMarkProcessor.class.getResource("/template/md.ftl"));
         StringTemplateLoader stringTemplateLoader = new StringTemplateLoader();
